@@ -20,7 +20,21 @@ The API provides commands to remote start, stop and wash program changing.
 
 The API will only work for Crossref DOIs. You can test the registration agency for a DOI using the following route:
 
-###Examples
+### API Description
+
+These can be used alone like this
+
+| resource      | description                       |
+|:--------------|:----------------------------------|
+| `/washmachines`      | returns a list of all available wash machines
+| `/washmachine/{id}`    | returns a list of all funders in the [Funder Registry](https://github.com/Crossref/open-funder-registry)
+| `/members` | returns a list of all Crossref members (mostly publishers) |
+| `/types`      | returns a list of valid work types |
+| `/licenses`  | return a list of licenses applied to works in Crossref metadata |
+| `/journals` | return a list of journals in the Crossref database |
+
+
+### Examples
 
 Using the URL:
 
@@ -51,7 +65,7 @@ Will return the following result:
            "activeWashCycleElement": null
         }
      }
-   
+    }
 
 
 
