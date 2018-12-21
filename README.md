@@ -17,8 +17,6 @@ The API is generally RESTFUL and returns results in JSON. The API supports HTTP.
 
 The API provides commands to remote start, stop and wash program changing.
 
-The API will only work for Crossref DOIs. You can test the registration agency for a DOI using the following route:
-
 ### API Description
 
 These can be used alone like this
