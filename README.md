@@ -28,7 +28,7 @@ These can be used alone like this
 |:--------------|:-------|:--------------------------------|
 | `/washmachines`      | GET | returns a list of all available wash machines |
 | `/washmachine/{id}`    |  GET | returns a wash machine by its id |
-| `/washmachine/setwashcycle/{washMachineId}` |  PUT | specifies wash program for an approprieate wash machine |
+| `/washmachine/setwashprogram/{washMachineId}` |  PUT | specifies wash program for an approprieate wash machine |
 | `/washmachine/start/{washMachineId}` | PUT | starts a wash process of a wash machine with the specified id |
 | `/washmachine/pause/{washMachineId}` | PUT | puts a wash process of a wash machine with the specified id on pause |
 
