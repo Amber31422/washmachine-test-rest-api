@@ -75,7 +75,56 @@ Will return the following result:
      }
     }
 
+Using the URL:
+`http://localhost:8080/washmachine/setwashcycle/2`
 
+With the following request bogy: 
+
+       {
+	"id" : "1",
+	"elements": [
+		{
+				"id":"1",
+				"name":"Water kit"
+		},
+		{
+				"id":"2",
+				"name":"Laundry"
+		},
+		{
+				"id":"3",
+				"name":"Wringing "
+		}
+		
+	 ]
+      }
+
+Will return the following result:
+
+	{
+  	"id": 2,
+  	"modelName": "EFLS627UTT",
+  	"washCycle": {
+   	 "id": 1,
+    	"washCycleElementList": [
+      {
+        "name": "Water kit"
+      },
+      {
+        "name": "Laundry"
+      },
+      {
+        "name": "Wringing "
+      }
+    ]
+  	},
+  	"washMachineState": {
+   	 "spin": 0,
+    "temperature": 0,
+    "runningState": "WAITING",
+    "activeWashCycleElement": null
+  	}
+	}
 
 
 ## API versioning
