@@ -1,7 +1,6 @@
 package com.shchekotov.wmservice.model;
 
 import java.io.Serializable;
-import java.util.List;
 import java.util.Objects;
 
 public class WashMachine implements Serializable {
@@ -12,7 +11,7 @@ public class WashMachine implements Serializable {
 
     private String modelName;
 
-    private WashMachineState washMachineStateHistory;
+    private WashMachineState washMachineState;
 
     private WashCycle washCycle;
 
@@ -36,11 +35,11 @@ public class WashMachine implements Serializable {
     }
 
     public WashMachineState getWashMachineState() {
-        return washMachineStateHistory;
+        return washMachineState;
     }
 
     public void setWashMachineState(WashMachineState washMachineStateHistory) {
-        this.washMachineStateHistory = washMachineStateHistory;
+        this.washMachineState = washMachineStateHistory;
     }
 
     public WashCycle getWashCycle() {
@@ -58,12 +57,12 @@ public class WashMachine implements Serializable {
         WashMachine that = (WashMachine) o;
         return id == that.id &&
                 Objects.equals(modelName, that.modelName) &&
-                Objects.equals(washMachineStateHistory, that.washMachineStateHistory) &&
+                Objects.equals(washMachineState, that.washMachineState) &&
                 Objects.equals(washCycle, that.washCycle);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, modelName, washMachineStateHistory, washCycle);
+        return Objects.hash(id, modelName, washMachineState, washCycle);
     }
 }

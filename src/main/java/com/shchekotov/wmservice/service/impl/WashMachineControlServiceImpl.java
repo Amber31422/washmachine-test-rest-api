@@ -13,11 +13,11 @@ import java.util.Optional;
 public class WashMachineControlServiceImpl implements WashMachineControlService {
 
     @Autowired
-    private WashMachineService machineService;
+    private WashMachineService washMachineService;
 
     @Override
     public WashMachineState start(long id) {
-        Optional<WashMachine> optional = machineService.getWashMachineById(id);
+        Optional<WashMachine> optional = washMachineService.getWashMachineById(id);
         if (optional.isPresent()) {
             WashMachine washMachine = optional.get();
             WashMachineState washMachineState = washMachine.getWashMachineState();
@@ -28,8 +28,8 @@ public class WashMachineControlServiceImpl implements WashMachineControlService 
     }
 
     @Override
-    public WashMachineState setUpWashCycle(long id, WashCycle washCycle) {
-        Optional<WashMachine> optional = machineService.getWashMachineById(id);
+    public WashMachine setUpWashCycle(long id, WashCycle washCycle) {
+        Optional<WashMachine> optional = washMachineService.getWashMachineById(id);
         if (optional.isPresent()) {
             WashMachine washMachine = optional.get();
             washMachine.setWashCycle(washCycle);
@@ -37,14 +37,14 @@ public class WashMachineControlServiceImpl implements WashMachineControlService 
             List<WashCycleElement> washCycleElementList = washCycle.getWashCycleElementList();
             Optional<WashCycleElement> firstElement = washCycleElementList.stream().findFirst();
             firstElement.ifPresent(washMachineState::setActiveWashCycleElement);
-            return washMachineState;
+            return washMachine;
         }
         return null;
     }
 
     @Override
     public WashMachineState pause(long id) {
-        Optional<WashMachine> optional = machineService.getWashMachineById(id);
+        Optional<WashMachine> optional = washMachineService.getWashMachineById(id);
         if (optional.isPresent()) {
             WashMachine washMachine = optional.get();
             WashMachineState washMachineState = washMachine.getWashMachineState();
@@ -54,4 +54,11 @@ public class WashMachineControlServiceImpl implements WashMachineControlService 
         return null;
     }
 
+    public WashMachineService getWashMachineService() {
+        return washMachineService;
+    }
+
+    public void setWashMachineService(WashMachineService washMachineService) {
+        this.washMachineService = washMachineService;
+    }
 }

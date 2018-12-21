@@ -126,5 +126,4 @@ public class WashMachineRestController {
         }
         return ResponseEntity.ok(ParamUtils.result(true));
     }
-
 }
