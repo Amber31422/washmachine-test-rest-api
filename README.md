@@ -70,6 +70,17 @@ Will return the following result:
 
 
 ## API versioning
+The API uses a semantic versioning scheme whereby the version number is divided into two parts delimited by periods. The first number represents the "major" release number. The second represents a "minor" release number.
+
+    Version 1.20
+            ^  ^
+            |  |
+        major  |
+           minor
+
+**Major** version increments are defined as releases that can break backwards compatibility. 
+
+**Minor** version increments are defined as backwards compatible. 
 
 ## Documentation history
-
+ V1: 2018-12-21, first draft.
