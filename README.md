@@ -24,8 +24,8 @@ The API will only work for Crossref DOIs. You can test the registration agency f
 
 These can be used alone like this
 
-| resource      | method |       description               |
-|:--------------|:----------------------------------|
+| resource      | method |         description             |
+|:--------------|:-------|:--------------------------------|
 | `/washmachines`      | GET | returns a list of all available wash machines
 | `/washmachine/{id}`    |  GET | returns a wash machine by its id
 | `/washmachine/setwashcycle/{washMachineId}` |  PUT |specifies a list of all Crossref members (mostly publishers) |
