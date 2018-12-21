@@ -24,14 +24,12 @@ The API will only work for Crossref DOIs. You can test the registration agency f
 
 These can be used alone like this
 
-| resource      | description                       |
+| resource      | method |       description               |
 |:--------------|:----------------------------------|
-| `/washmachines`      | returns a list of all available wash machines
-| `/washmachine/{id}`    | returns a list of all funders in the [Funder Registry](https://github.com/Crossref/open-funder-registry)
-| `/members` | returns a list of all Crossref members (mostly publishers) |
-| `/types`      | returns a list of valid work types |
-| `/licenses`  | return a list of licenses applied to works in Crossref metadata |
-| `/journals` | return a list of journals in the Crossref database |
+| `/washmachines`      | GET | returns a list of all available wash machines
+| `/washmachine/{id}`    |  GET | returns a wash machine by its id
+| `/washmachine/setwashcycle/{washMachineId}` |  PUT |specifies a list of all Crossref members (mostly publishers) |
+
 
 
 ### Examples
