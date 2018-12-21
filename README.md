@@ -14,7 +14,7 @@
 The Wash Machine Test REST API is one test API that provides the possibility of remote control of different washing machine actions.
 
 ## API Overview
-The API is generally RESTFUL and returns results in JSON. The API supports HTTP and HTTPS. 
+The API is generally RESTFUL and returns results in JSON. The API supports HTTP. 
 
 The API provides commands to remote start, stop and wash program changing.
 
