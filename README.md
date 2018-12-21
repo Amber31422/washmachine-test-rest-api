@@ -4,7 +4,6 @@
 [Wash Machine Test REST API](#washmachine-test-rest-api)
 - [Preamble](#preamble)
 - [API overview](#api-overview)
-- [Launch](#launch)
 - [API versioning](#api-versioning)
 - [Documentation history](#documentation-history)
 	
@@ -107,13 +106,13 @@ Will return the following result:
    	    "id": 1,
     	    "washCycleElementList": [
                {
-                  "name": "Water kit"
+                  "name": "Washing"
                },
                {
-                  "name": "Laundry"
+                  "name": "Rinsing"
                },
                {
-                  "name": "Wringing "
+                  "name": "Spinning"
                }
             ]
   	  },
