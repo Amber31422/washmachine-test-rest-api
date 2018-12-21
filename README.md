@@ -80,7 +80,7 @@ Using the URL:
 
 With the following request bogy: 
 
-       {
+     {
 	  "id" : "1",
 	  "elements": [
 	   {
@@ -104,8 +104,8 @@ Will return the following result:
   	  "id": 2,
   	  "modelName": "EFLS627UTT",
   	  "washCycle": {
-   	      "id": 1,
-    	      "washCycleElementList": [
+   	    "id": 1,
+    	    "washCycleElementList": [
                {
                   "name": "Water kit"
                },
