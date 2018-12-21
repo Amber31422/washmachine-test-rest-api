@@ -10,7 +10,7 @@
 <!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 ## Preamble
-The Wash Machine Test REST API is one test API that provides the possibility of remote control of different washing machine actions.
+The Wash Machine Test REST API is the test API that provides the possibility of remote control of different washing machine actions.
 
 ## API Overview
 The API is generally RESTFUL and returns results in JSON. The API supports HTTP. 
