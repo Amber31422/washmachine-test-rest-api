@@ -29,7 +29,7 @@ These can be used alone like this
 | `/washmachine/start/{washMachineId}` | PUT | starts a wash process of a wash machine with the specified id |
 | `/washmachine/pause/{washMachineId}` | PUT | puts a wash process of a wash machine with the specified id on pause |
 
-These field queries are available on the /washmachine/setwashcycle/{washMachineId} route:
+These field queries are available on the /washmachine/setwashprogram/{washMachineId} route:
 
 | parameter      |          description             |
 |:--------------|:--------------------------------|
