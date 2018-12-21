@@ -28,19 +28,32 @@ Using the URL:
 
 Will return the following result:
 
- {
-      status: "ok",
-      message-type: "work-agency",
-      message-version: "1.0.0",
-      message: {
-        DOI: "10.1037/0003-066x.59.1.29",
-        agency: {
-          id: "crossref",
-          label: "Crossref"
+    {
+      {
+       "id": 1,
+       "modelName": "EFLS627UTT",
+       "washCycle": null,
+       "washMachineState": {
+          "spin": 0,
+          "temperature": 0,
+          "runningState": "TURNED_ON",
+          "activeWashCycleElement": null
         }
-      }
-    }
-}
+      },
+    {
+       "id": 2,
+       "modelName": "EFLS627UTT",
+       "washCycle": null,
+       "washMachineState": {
+           "spin": 0,
+           "temperature": 0,
+           "runningState": "WAITING",
+           "activeWashCycleElement": null
+        }
+     }
+   
+
+
 
 
 ## API versioning
