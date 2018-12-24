@@ -73,7 +73,7 @@ Will return the following result:
     }
 
 Using the URL:
-`http://localhost:8080/washmachine/setwashcycle/2`
+`http://localhost:8080/washmachine/setwashprogram/2`
 
 With the following request bogy: 
 
