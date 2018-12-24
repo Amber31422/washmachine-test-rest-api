@@ -36,7 +36,7 @@ public class WashMachineRestController {
         return washMachineService.findAll();
     }
 
-    @RequestMapping(value = "/washmachine/setwashcycle/{washMachineId}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/washmachine/setwashprogram/{washMachineId}", method = RequestMethod.PUT)
     public ResponseEntity<Map<String, Object>> setUpWashCycleById(@PathVariable Long washMachineId, @RequestBody() WashCycleRequest washCycleRequest) {
 
         try {
